@@ -1,5 +1,8 @@
 There's a Bluetooth RGB LED bulb + combined Bluetooth speaker which
-identifies itself in BT scan as "Chsmartbulb".
+identifies itself in BT scan as "Chsmartbulb". Where bought, it was
+described as "BL08A".
+
+![picture](https://raw.githubusercontent.com/pfalcon/Chsmartbulb-led-bulb-speaker/master/Chsmartbulb.jpg)
 
 There're many BT speaker bulbs on market, even cheaper than this, but:
 
