@@ -1,5 +1,6 @@
 from bluetooth import *
 import sys
+import time
 
 def h(v):
     return binascii.unhexlify(v)
@@ -124,5 +125,20 @@ print(repr(sock.recv(40)))
 # 617
 sock.send(h("01fe0000510010000000008000000080"))
 print(repr(sock.recv(40)))
+
+# These lines are due to @acolytec3, who figured out color encoding
+
+# White
+sock.send(h("01fe0000538310000000000050ff0000"))
+time.sleep(1)
+# Red
+sock.send(h('01fe0000538310000000ff0050000000'))
+time.sleep(1)
+# Blue
+sock.send(h('01fe00005383100000ff000050000000'))
+time.sleep(1)
+# Green
+sock.send(h('01fe000053831000ff00000050000000'))
+time.sleep(1)
 
 sock.close()
