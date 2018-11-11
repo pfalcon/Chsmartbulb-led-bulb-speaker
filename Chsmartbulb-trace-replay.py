@@ -11,11 +11,11 @@ if sys.version < '3':
 addr = None
 
 if len(sys.argv) < 2:
-    print("no device specified.  Searching all nearby bluetooth devices for")
-    print("the SampleServer service")
+    print("No BT address specified. Searching all nearby bluetooth devices for")
+    print("the SPP service, which Chsmartbulb uses. (May take some time.)")
 else:
     addr = sys.argv[1]
-    print("Searching for SampleServer on %s" % addr)
+    print("Searching for Chsmartbulb on %s" % addr)
 
 # SPP
 uuid = "00001101-0000-1000-8000-00805F9B34FB"
