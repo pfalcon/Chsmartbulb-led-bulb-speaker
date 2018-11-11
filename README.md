@@ -32,5 +32,5 @@ The repo contains BT communication capture on an Android phone, from enabling
 BT to connecting to bulb, changing colors among the main ones (red, green,
 blue), turning bulb on and off.
 
-There's a script which sends sequences from the capture to bulb, but color
-changing doesn't work.
+There's a script which sends sequences from the capture to bulb. Thanks to
+[@acolytec3](https://github.com/acolytec3), color changing codes were found.
